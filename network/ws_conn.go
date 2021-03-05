@@ -29,7 +29,7 @@ func newWSConn(conn *websocket.Conn, pendingWriteNum int, maxMsgLen uint32) *WSC
 			if b == nil {
 				break
 			}
-
+			log.Release("send msg: %v", b)
 			err := conn.WriteMessage(websocket.BinaryMessage, b)
 			if err != nil {
 				break
