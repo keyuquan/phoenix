@@ -1,4 +1,4 @@
-Leaf
+Phoenix
 ====
 A pragmatic game server framework in Go (golang).
 
@@ -24,4 +24,4 @@ Documentation
 Licensing
 ---------
 
-Leaf is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/keyuquan/phoenix/blob/master/LICENSE) for the full license text.
+Phoenix is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/keyuquan/phoenix/blob/master/LICENSE) for the full license text.

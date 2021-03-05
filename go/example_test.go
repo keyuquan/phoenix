@@ -24,7 +24,7 @@ func Example() {
 	d.Go(func() {
 		fmt.Print("My name is ")
 	}, func() {
-		fmt.Println("Leaf")
+		fmt.Println("phoenix")
 	})
 
 	d.Close()
@@ -32,7 +32,7 @@ func Example() {
 	// Output:
 	// 1 + 1 = ?
 	// 2
-	// My name is Leaf
+	// My name is Phoenix
 }
 
 func ExampleLinearContext() {

@@ -11,7 +11,7 @@ func ExampleTimer() {
 
 	// timer 1
 	d.AfterFunc(1, func() {
-		fmt.Println("My name is Leaf")
+		fmt.Println("My name is Phoenix")
 	})
 
 	// timer 2
@@ -24,7 +24,7 @@ func ExampleTimer() {
 	(<-d.ChanTimer).Cb()
 
 	// Output:
-	// My name is Leaf
+	// My name is Phoenix
 }
 
 func ExampleCronExpr() {
@@ -55,7 +55,7 @@ func ExampleCron() {
 	// cron
 	var c *timer.Cron
 	c = d.CronFunc(cronExpr, func() {
-		fmt.Println("My name is Leaf")
+		fmt.Println("My name is Phoenix")
 		c.Stop()
 	})
 
@@ -63,5 +63,5 @@ func ExampleCron() {
 	(<-d.ChanTimer).Cb()
 
 	// Output:
-	// My name is Leaf
+	// My name is Phoenix
 }

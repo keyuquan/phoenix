@@ -1,4 +1,4 @@
-package leaf
+package phoenix
 
 import (
 	"github.com/keyuquan/phoenix/cluster"
@@ -21,7 +21,7 @@ func Run(mods ...module.Module) {
 		defer logger.Close()
 	}
 
-	log.Release("Leaf %v starting up", version)
+	log.Release("Phoenix %v starting up", version)
 
 	// module
 	for i := 0; i < len(mods); i++ {
@@ -39,7 +39,7 @@ func Run(mods ...module.Module) {
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt, os.Kill)
 	sig := <-c
-	log.Release("Leaf closing down (signal: %v)", sig)
+	log.Release("Phoenix closing down (signal: %v)", sig)
 	console.Destroy()
 	cluster.Destroy()
 	module.Destroy()

@@ -6,7 +6,7 @@ import (
 )
 
 func Example() {
-	name := "Leaf"
+	name := "phoenix"
 
 	log.Debug("My name is %v", name)
 	log.Release("My name is %v", name)
