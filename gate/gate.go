@@ -28,18 +28,20 @@ type Gate struct {
 	LittleEndian bool
 }
 
+var WsServer *network.WSServer
+
 func (gate *Gate) Run(closeSig chan bool) {
-	var wsServer *network.WSServer
+
 	if gate.WSAddr != "" {
-		wsServer = new(network.WSServer)
-		wsServer.Addr = gate.WSAddr
-		wsServer.MaxConnNum = gate.MaxConnNum
-		wsServer.PendingWriteNum = gate.PendingWriteNum
-		wsServer.MaxMsgLen = gate.MaxMsgLen
-		wsServer.HTTPTimeout = gate.HTTPTimeout
-		wsServer.CertFile = gate.CertFile
-		wsServer.KeyFile = gate.KeyFile
-		wsServer.NewAgent = func(conn *network.WSConn) network.Agent {
+		WsServer = new(network.WSServer)
+		WsServer.Addr = gate.WSAddr
+		WsServer.MaxConnNum = gate.MaxConnNum
+		WsServer.PendingWriteNum = gate.PendingWriteNum
+		WsServer.MaxMsgLen = gate.MaxMsgLen
+		WsServer.HTTPTimeout = gate.HTTPTimeout
+		WsServer.CertFile = gate.CertFile
+		WsServer.KeyFile = gate.KeyFile
+		WsServer.NewAgent = func(conn *network.WSConn) network.Agent {
 			a := &agent{conn: conn, gate: gate}
 			if gate.AgentChanRPC != nil {
 				gate.AgentChanRPC.Go("NewAgent", a)
@@ -66,15 +68,15 @@ func (gate *Gate) Run(closeSig chan bool) {
 		}
 	}
 
-	if wsServer != nil {
-		wsServer.Start()
+	if WsServer != nil {
+		WsServer.Start()
 	}
 	if tcpServer != nil {
 		tcpServer.Start()
 	}
 	<-closeSig
-	if wsServer != nil {
-		wsServer.Close()
+	if WsServer != nil {
+		WsServer.Close()
 	}
 	if tcpServer != nil {
 		tcpServer.Close()
