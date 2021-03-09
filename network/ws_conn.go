@@ -29,7 +29,7 @@ func newWSConn(conn *websocket.Conn, pendingWriteNum int, maxMsgLen uint32) *WSC
 			if b == nil {
 				break
 			}
-			log.Release("response msg: %v", string(b[:]))
+			log.Release("response : %v", string(b[:]))
 			err := conn.WriteMessage(websocket.TextMessage, b)
 			if err != nil {
 				break
@@ -94,7 +94,7 @@ func (wsConn *WSConn) RemoteAddr() net.Addr {
 // goroutine not safe
 func (wsConn *WSConn) ReadMsg() ([]byte, error) {
 	_, b, err := wsConn.conn.ReadMessage()
-	log.Release("request msg: %v", string(b[:]))
+	log.Release("request : %v", string(b[:]))
 	return b, err
 }
 
