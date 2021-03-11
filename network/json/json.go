@@ -126,7 +126,7 @@ func (p *Processor) Route(msg interface{}, userData interface{}) error {
 	return nil
 }
 
-// goroutine safe
+// goroutine safe 接受信息，把字节数组化为 数据： 可给前段参考
 func (p *Processor) Unmarshal(data []byte) (interface{}, error) {
 	var m map[string]json.RawMessage
 	err := json.Unmarshal(data, &m)
@@ -155,7 +155,7 @@ func (p *Processor) Unmarshal(data []byte) (interface{}, error) {
 	panic("bug")
 }
 
-// goroutine safe
+// goroutine safe 发送信息，把信息转化为 字节数组
 func (p *Processor) Marshal(msg interface{}) ([][]byte, error) {
 	msgType := reflect.TypeOf(msg)
 	if msgType == nil || msgType.Kind() != reflect.Ptr {
