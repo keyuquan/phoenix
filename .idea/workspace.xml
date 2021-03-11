@@ -5,14 +5,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6631874-17f8-4395-92d7-4cdebbfdf719" name="Default Changelist" comment="test ws json 2">
-      <change beforePath="$PROJECT_DIR$/network/ws_conn.go" beforeDir="false" afterPath="$PROJECT_DIR$/network/ws_conn.go" afterDir="false" />
+    <list default="true" id="e6631874-17f8-4395-92d7-4cdebbfdf719" name="Default Changelist" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mongodb/example_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mongodb/mongodb.go" beforeDir="false" />
     </list>
     <list id="f2c1e19c-eed8-433a-b98c-3ca9b01aa452" name="Revert &quot;phoenix name change&quot;" comment="Revert &quot;phoenix name change&quot;&#10;&#10;This reverts commit 29b4e8c5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
@@ -26,19 +35,35 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go_learn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../leaf" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\workspace_go\phoenix" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build redisdb.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="phoenix" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/db/redisdb/redisdb.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build redisdb.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -140,7 +165,35 @@
       <option name="project" value="LOCAL" />
       <updated>1615297404503</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test">
+      <created>1615452911420</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1615452911420</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test">
+      <created>1615455367143</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1615455367143</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test">
+      <created>1615458511009</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1615458511009</updated>
+    </task>
+    <task id="LOCAL-00017" summary="test">
+      <created>1615461193447</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615461193447</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,40 +246,56 @@
     <MESSAGE value="phoenix name reset" />
     <MESSAGE value="phoenix name change" />
     <MESSAGE value="log back message" />
-    <MESSAGE value="test" />
     <MESSAGE value="test ws json" />
     <MESSAGE value="test ws json reset" />
     <MESSAGE value="test ws json 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test ws json 2" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="215" key="FileChooserDialogImpl" timestamp="1615294305030">
+    <state x="549" y="215" key="FileChooserDialogImpl" timestamp="1615467534777">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state x="549" y="215" key="FileChooserDialogImpl/0.0.1536.920@0.0.1536.920" timestamp="1615294305030" />
+    <state x="549" y="215" key="FileChooserDialogImpl/0.0.1536.920@0.0.1536.920" timestamp="1615467534777" />
     <state x="640" y="357" key="Github.ShareDialog" timestamp="1614915656508">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
     <state x="640" y="357" key="Github.ShareDialog/0.0.1536.920@0.0.1536.920" timestamp="1614915656508" />
+    <state width="1493" height="317" key="GridCell.Tab.0.bottom" timestamp="1615466965388">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="317" key="GridCell.Tab.0.bottom/0.0.1536.920@0.0.1536.920" timestamp="1615466965388" />
+    <state width="1493" height="317" key="GridCell.Tab.0.center" timestamp="1615466965388">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="317" key="GridCell.Tab.0.center/0.0.1536.920@0.0.1536.920" timestamp="1615466965388" />
+    <state width="1493" height="317" key="GridCell.Tab.0.left" timestamp="1615466965387">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="317" key="GridCell.Tab.0.left/0.0.1536.920@0.0.1536.920" timestamp="1615466965387" />
+    <state width="1493" height="317" key="GridCell.Tab.0.right" timestamp="1615466965388">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state width="1493" height="317" key="GridCell.Tab.0.right/0.0.1536.920@0.0.1536.920" timestamp="1615466965388" />
     <state x="403" y="220" key="MultipleFileMergeDialog" timestamp="1615297698201">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
     <state x="403" y="220" key="MultipleFileMergeDialog/0.0.1536.920@0.0.1536.920" timestamp="1615297698201" />
-    <state x="603" y="161" key="RollbackChangesDialog" timestamp="1615297774439">
+    <state x="603" y="161" key="RollbackChangesDialog" timestamp="1615455264036">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state x="603" y="161" key="RollbackChangesDialog/0.0.1536.920@0.0.1536.920" timestamp="1615297774439" />
+    <state x="603" y="161" key="RollbackChangesDialog/0.0.1536.920@0.0.1536.920" timestamp="1615455264036" />
     <state x="270" y="104" key="SettingsEditor" timestamp="1614931846763">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
     <state x="270" y="104" key="SettingsEditor/0.0.1536.920@0.0.1536.920" timestamp="1614931846763" />
-    <state x="361" y="179" key="Vcs.Push.Dialog.v2" timestamp="1615297405830">
+    <state x="361" y="179" key="Vcs.Push.Dialog.v2" timestamp="1615461194812">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state x="361" y="179" key="Vcs.Push.Dialog.v2/0.0.1536.920@0.0.1536.920" timestamp="1615297405830" />
-    <state x="468" y="192" width="600" height="536" key="find.popup" timestamp="1615297358737">
+    <state x="361" y="179" key="Vcs.Push.Dialog.v2/0.0.1536.920@0.0.1536.920" timestamp="1615461194812" />
+    <state x="468" y="192" width="600" height="536" key="find.popup" timestamp="1615467706314">
       <screen x="0" y="0" width="1536" height="920" />
     </state>
-    <state x="468" y="192" width="600" height="536" key="find.popup/0.0.1536.920@0.0.1536.920" timestamp="1615297358737" />
+    <state x="468" y="192" width="600" height="536" key="find.popup/0.0.1536.920@0.0.1536.920" timestamp="1615467706314" />
   </component>
 </project>
