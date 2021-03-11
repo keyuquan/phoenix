@@ -167,7 +167,7 @@ func (p *Processor) Marshal(msg interface{}) ([][]byte, error) {
 	}
 
 	// data
-	//m := map[string]interface{}{msgID: msg}
-	data, err := json.Marshal(msg)
+	m := map[string]interface{}{msgID: msg}
+	data, err := json.Marshal(m)
 	return [][]byte{data}, err
 }
