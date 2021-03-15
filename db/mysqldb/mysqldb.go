@@ -17,8 +17,8 @@ func OpenDB(path string) (*sql.DB, error) {
 	DB.SetMaxOpenConns(10)
 	DB.SetMaxIdleConns(10)
 	if err := DB.Ping(); err != nil {
-		log.Debug("opon database fail ...")
+		log.Debug("open database fail ...")
 	}
-	log.Debug("opon database success ...")
+	log.Debug("open database success ...")
 	return DB, err
 }
