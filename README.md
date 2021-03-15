@@ -1,27 +1,5 @@
 Phoenix
 ====
-A pragmatic game server framework in Go (golang).
+* 本框架是对 leaf 框架进行修改，使其更符合棋牌游戏的需求
+* leaf 框架git : https://github.com/name5566/leaf
 
-Features
----------
-
-* Extremely easy to use
-* Reliable
-* Multicore support
-* Modularity
-
-Community
----------
-
-* QQ 群：376389675
-
-Documentation
----------
-
-* [中文文档](https://github.com/keyuquan/phoenix/blob/master/TUTORIAL_ZH.md)
-* [English](https://github.com/keyuquan/phoenix/blob/master/TUTORIAL_EN.md)
-
-Licensing
----------
-
-Phoenix is licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/keyuquan/phoenix/blob/master/LICENSE) for the full license text.
