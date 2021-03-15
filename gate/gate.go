@@ -87,6 +87,7 @@ type agent struct {
 	conn     network.Conn
 	gate     *Gate
 	userData interface{}
+	svrData  string
 }
 
 func (a *agent) Run() {
@@ -157,4 +158,12 @@ func (a *agent) UserData() interface{} {
 
 func (a *agent) SetUserData(data interface{}) {
 	a.userData = data
+}
+
+func (a *agent) SvrData() string {
+	return a.svrData
+}
+
+func (a *agent) SetSvrData(data string) {
+	a.svrData = data
 }

@@ -12,4 +12,6 @@ type Agent interface {
 	Destroy()
 	UserData() interface{}
 	SetUserData(data interface{})
+	SvrData() string
+	SetSvrData(data string)
 }
